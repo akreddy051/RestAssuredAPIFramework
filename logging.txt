@@ -1,0 +1,115 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": 33.427362,
+        "lng": -38.383494
+    },
+    "accuracy": 50,
+    "name": "Akshay Reddy",
+    "phone_number": "84848484848",
+    "address": "Lingi,Maharashtra",
+    "types": [
+        "kirana",
+        "super market"
+    ],
+    "website": "www.akreddy.com",
+    "language": "Telugu"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Mar 2023 09:57:56 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "c4c9fd7859910cead9662cefdde401c8",
+    "scope": "APP",
+    "reference": "b9721b2e285bfbefec1fb1be08f7b429b9721b2e285bfbefec1fb1be08f7b429",
+    "id": "b9721b2e285bfbefec1fb1be08f7b429"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=c4c9fd7859910cead9662cefdde401c8
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=c4c9fd7859910cead9662cefdde401c8
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 23 Mar 2023 09:57:57 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 237
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "33.427362",
+        "longitude": "-38.383494"
+    },
+    "accuracy": "50",
+    "name": "Akshay Reddy",
+    "phone_number": "84848484848",
+    "address": "Lingi,Maharashtra",
+    "types": "kirana,super market",
+    "website": "www.akreddy.com",
+    "language": "Telugu"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "c4c9fd7859910cead9662cefdde401c8"
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Mar 2023 09:57:58 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
