@@ -1,6 +1,6 @@
 Feature: RSA Maps API's validations
 
-  @AddPlaceAPIValidation
+  @AddPlaceAPIValidation @Regression
   Scenario Outline: Verify whether the Add Place API is working properly or not
     Given Add Place Payload with <name>, <language> and <address>
     When user calls <APIName> with <requestType> http request
@@ -14,7 +14,7 @@ Feature: RSA Maps API's validations
       | Akshay Reddy | Telugu   | Lingi,Maharashtra | AddPlaceAPI | Post       |
 #      | Nidhi Joshi  | Hindi    | Balaghat, MP      | AddPlaceAPI | Post       |
 
-  @DeletePlaceAPIValidation
+  @DeletePlaceAPIValidation @Regression
   Scenario: Verify if Delete Place functionality is working
     Given DeletePlace Payload
     When user calls DeletePlaceAPI with DELETE http request
